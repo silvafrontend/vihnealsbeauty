@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vih Nails Beauty | Nail designer</title>
+  <meta name="description" content="Nail designer: esmaltação em gel, alongamento, fibra de vidro e nail art. Escolha a cor e agende seu horário pelo WhatsApp.">
+  <meta name="theme-color" content="#fdf0f5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff3d8b'/%3E%3Ctext x='32' y='46' font-size='38' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='%232a0f2e'%3EV%3C/text%3E%3C/svg%3E">
+
+  <!-- Aparência ao compartilhar o link -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vih Nails Beauty | Nail designer">
+  <meta property="og:description" content="Escolha a cor e agende seu horário pelo WhatsApp.">
+
+  <!-- Marca que o JavaScript está ativo (o site funciona mesmo sem ele) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+
+  <!-- Estilos: arquivo na mesma pasta deste index.html -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dados para o Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Vih Nails Beauty",
+    "description": "Nail designer: esmaltação em gel, alongamento, fibra de vidro e nail art.",
+    "telephone": "+5551991460495",
+    "sameAs": ["https://www.instagram.com/vih.nailsbeauty/"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Desenho da unha usado no site (não aparece sozinho) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="vol" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#fff" stop-opacity=".30"/>
+        <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+      </linearGradient>
+    </defs>
+    <symbol id="unha" viewBox="0 0 100 200">
+      <path d="M50 4C74 40 92 92 90 150C89 181 72 197 50 197C28 197 11 181 10 150C8 92 26 40 50 4Z" style="fill:var(--unha)"/>
+      <path d="M50 4C74 40 92 92 90 150C89 181 72 197 50 197C28 197 11 181 10 150C8 92 26 40 50 4Z" fill="url(#vol)"/>
+      <path d="M27 92C29 70 36 50 45 32C43 62 40 96 42 138C33 128 26 112 27 92Z" fill="#fff" opacity=".5"/>
+      <circle cx="66" cy="60" r="3.2" fill="#fff" opacity=".7"/>
+    </symbol>
+  </svg>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="topo" id="topo">
+    <div class="wrap topo__grade">
+      <a class="marca" href="#inicio" aria-label="Vih Nails Beauty, ir para o início">Vih Nails</a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn--gel btn--p topo__cta" href="#agendar">Agendar horário</a>
+
+      <button class="hamb" id="hamb" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= INÍCIO ================= -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero__grade">
+
+        <div class="hero__texto">
+          <h1>Unhas feitas com calma e brilho de espelho.</h1>
+          <p>Esmaltação em gel, alongamento e nail art com hora marcada. Escolha uma cor ao lado e leve para o seu agendamento.</p>
+          <div class="hero__acoes">
+            <a class="btn btn--gel" href="#agendar">Agendar horário</a>
+            <a class="btn btn--linha" href="#galeria">Ver trabalhos</a>
+          </div>
+        </div>
+
+        <div class="palco">
+          <div class="palco__cena">
+            <div class="palco__disco"></div>
+            <div class="mao" id="mao" aria-hidden="true">
+              <svg class="unha" viewBox="0 0 100 200" style="--w:17%;--r:-9deg;--y:14%;--i:0"><use href="#unha"/></svg>
+              <svg class="unha" viewBox="0 0 100 200" style="--w:19%;--r:-4deg;--y:4%;--i:1"><use href="#unha"/></svg>
+              <svg class="unha" viewBox="0 0 100 200" style="--w:20%;--r:0deg;--y:-4%;--i:2"><use href="#unha"/></svg>
+              <svg class="unha" viewBox="0 0 100 200" style="--w:19%;--r:5deg;--y:2%;--i:3"><use href="#unha"/></svg>
+              <svg class="unha" viewBox="0 0 100 200" style="--w:18%;--r:16deg;--y:22%;--i:4"><use href="#unha"/></svg>
+            </div>
+          </div>
+
+          <p class="palco__nome">Cor escolhida: <strong id="corNome">Rosa gel</strong></p>
+
+          <div class="cores" role="group" aria-label="Escolha a cor das unhas">
+            <button class="cor" type="button" style="--c:#e8b4a0" data-cor="#e8b4a0" data-nome="Nude" aria-pressed="false" aria-label="Nude"></button>
+            <button class="cor" type="button" style="--c:#FFF1C9" data-cor="#FFF1C9" data-nome="shaine" aria-pressed="false" aria-label="Cereja"></button>
+            <button class="cor" type="button" style="--c:#FFB6C1" data-cor="#FFB6C1" data-nome="rosa" aria-pressed="false" aria-label="Lavanda"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS ================= -->
+    <section class="secao" id="servicos">
+      <div class="wrap">
+        <div class="secao__topo">
+          <h2>Serviços</h2>
+          <p>Os valores variam com o formato, o comprimento e a decoração. Peça o valor pelo WhatsApp ou já escolha o serviço no agendamento.</p>
+        </div>
+
+        <!-- Para mostrar preço fixo, adicione dentro de cada item: <p class="cardapio__preco">A partir de R$ 00</p> -->
+        <ul class="cardapio">
+          <li class="cardapio__item">
+            <div>
+              <h3>Esmaltação em gel</h3>
+              <p>Cor intensa, brilho de espelho e longa duração, sem lascar.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Esmaltação em gel">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Esmaltação em gel">Pedir valor</a>
+            </div>
+          </li>
+          <li class="cardapio__item">
+            <div>
+              <h3>Alongamento em gel</h3>
+              <p>Unhas longas, firmes e naturais, no formato e comprimento que você preferir.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Alongamento em gel">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Alongamento em gel">Pedir valor</a>
+            </div>
+          </li>
+          <li class="cardapio__item">
+            <div>
+              <h3>Fibra de vidro</h3>
+              <p>Alongamento leve e resistente, com acabamento fino e elegante.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Fibra de vidro">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Fibra de vidro">Pedir valor</a>
+            </div>
+          </li>
+          <li class="cardapio__item">
+            <div>
+              <h3>Nail art e decoração</h3>
+              <p>Francesinha, desenhos, pedrarias, efeitos e a referência que você trouxer.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Nail art e decoração">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Nail art e decoração">Pedir valor</a>
+            </div>
+          </li>
+          <li class="cardapio__item">
+            <div>
+              <h3>Manutenção</h3>
+              <p>Renovação das unhas alongadas para manter tudo alinhado e bonito.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Manutenção">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Manutenção">Pedir valor</a>
+            </div>
+          </li>
+          <li class="cardapio__item">
+            <div>
+              <h3>Remoção e cuidado das cutículas</h3>
+              <p>Retirada segura do material antigo e cuidado com a saúde das unhas.</p>
+            </div>
+            <div class="cardapio__acoes">
+              <a class="btn btn--gel btn--p" href="#agendar" data-servico="Remoção e cuidado das cutículas">Agendar</a>
+              <a class="btn btn--linha btn--p" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-valor="Remoção e cuidado das cutículas">Pedir valor</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="secao secao--petala" id="galeria">
+      <div class="wrap">
+        <div class="secao__topo">
+          <h2>Trabalhos da Vih</h2>
+          <p>Toque em uma foto para ampliar. Tem muito mais no Instagram.</p>
+        </div>
+
+        <!-- Fotos: foto-1.jpg até foto-7.jpg, na mesma pasta deste arquivo -->
+        <div class="galeria">
+          <button class="tile tile--grande" type="button" style="--fundo:#ffc2da;--rot:-8deg" aria-label="Ampliar foto 1">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-1.jpg" alt="Unhas feitas pela Vih, foto 1" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile" type="button" style="--fundo:#e3d6fb;--rot:10deg" aria-label="Ampliar foto 2">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-2.jpg" alt="Unhas feitas pela Vih, foto 2" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile" type="button" style="--fundo:#ffd9c9;--rot:-14deg" aria-label="Ampliar foto 3">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-3.jpg" alt="Unhas feitas pela Vih, foto 3" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile" type="button" style="--fundo:#d8ecfb;--rot:6deg" aria-label="Ampliar foto 4">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-4.jpg" alt="Unhas feitas pela Vih, foto 4" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile" type="button" style="--fundo:#f3d3e7;--rot:-4deg" aria-label="Ampliar foto 5">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-5.jpg" alt="Unhas feitas pela Vih, foto 5" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile tile--larga" type="button" style="--fundo:#cfe6d8;--rot:12deg" aria-label="Ampliar foto 6">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-6.jpg" alt="Unhas feitas pela Vih, foto 6" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+          <button class="tile tile--larga" type="button" style="--fundo:#ffc2da;--rot:-10deg" aria-label="Ampliar foto 7">
+            <svg class="tile__icone" viewBox="0 0 100 200" aria-hidden="true"><use href="#unha"/></svg>
+            <img src="img/foto-7.jpg" alt="Unhas feitas pela Vih, foto 7" loading="lazy" onerror="this.parentElement.classList.add('tile--vazio');this.remove()">
+          </button>
+        </div>
+
+        <p class="galeria__insta">
+          <a class="btn btn--linha" href="https://www.instagram.com/vih.nailsbeauty/" target="_blank" rel="noopener">Ver mais no Instagram @vih.nailsbeauty</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="secao" id="sobre">
+      <div class="wrap sobre">
+        <!-- Foto da Vih: vih.jpg na mesma pasta (enquanto não existir, aparece o V) -->
+        <div class="retrato">
+          <span aria-hidden="true">V</span>
+          <img src="img/vih.jpg" alt="Vih, nail designer" loading="lazy" onerror="this.remove()">
+        </div>
+
+        <div class="sobre__texto">
+          <h2>Oi, eu sou a Vih.</h2>
+          <p>Sou nail designer e cuido de cada atendimento como se fosse único. Antes de começar, a gente conversa sobre formato, comprimento e cor, para o resultado combinar com as suas mãos e com a sua rotina.</p>
+          <ul class="checagem">
+            <li>Atendimento com hora marcada, com atenção total a você</li>
+            <li>Materiais higienizados e esterilizados</li>
+            <li>Acabamento fino e durabilidade</li>
+            <li>Referências e ideias suas são sempre bem-vindas</li>
+          </ul>
+          <a class="btn btn--gel" href="#agendar">Reservar meu horário</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEPOIMENTOS (aparece só quando houver depoimentos no script.js) ================= -->
+    <section class="secao secao--lavanda" id="depoimentos" hidden>
+      <div class="wrap">
+        <div class="secao__topo">
+          <h2>O que dizem as clientes</h2>
+        </div>
+        <div class="depoimentos" id="listaDepoimentos"></div>
+      </div>
+    </section>
+
+    <!-- ================= AGENDAMENTO ================= -->
+    <section class="secao secao--tinta" id="agendar">
+      <div class="wrap agendar">
+
+        <div class="agendar__texto">
+          <h2>Reserve seu horário</h2>
+          <p>Preencha os dados ao lado. O WhatsApp abre com a mensagem pronta, é só enviar.</p>
+          <ol class="passos">
+            <li>Escolha o serviço, a cor e o melhor dia.</li>
+            <li>Envie a mensagem que abrir no WhatsApp.</li>
+            <li>A Vih confirma o horário com você.</li>
+          </ol>
+        </div>
+
+        <form class="form" id="form" novalidate>
+          <label class="campo" for="nome">Seu nome
+            <input type="text" id="nome" name="nome" autocomplete="given-name" placeholder="Como posso te chamar?">
+          </label>
+
+          <label class="campo" for="servico">Serviço
+            <select id="servico" name="servico">
+              <option value="">Selecione o serviço</option>
+              <option value="Esmaltação em gel">Esmaltação em gel</option>
+              <option value="Alongamento em gel">Alongamento em gel</option>
+              <option value="Fibra de vidro">Fibra de vidro</option>
+              <option value="Nail art e decoração">Nail art e decoração</option>
+              <option value="Manutenção">Manutenção</option>
+              <option value="Remoção e cuidado das cutículas">Remoção e cuidado das cutículas</option>
+              <option value="Ainda não sei">Ainda não sei, quero conversar</option>
+            </select>
+          </label>
+
+          <label class="campo" for="cor">Cor (opcional)
+            <select id="cor" name="cor">
+              <option value="">Ainda não escolhi</option>
+              <option>Rosa gel</option>
+              <option>Nude</option>
+              <option>Cereja</option>
+              <option>Lavanda</option>
+              <option>Vinho</option>
+              <option>Azul bebê</option>
+              <option>Sálvia</option>
+              <option>Preto</option>
+            </select>
+          </label>
+
+          <div class="form__linha">
+            <label class="campo" for="data">Data desejada
+              <input type="date" id="data" name="data">
+            </label>
+            <label class="campo" for="periodo">Período
+              <select id="periodo" name="periodo">
+                <option value="">Escolha</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="campo" for="obs">Observações (opcional)
+            <textarea id="obs" name="obs" rows="3" placeholder="Formato, referência, alguma dúvida..."></textarea>
+          </label>
+
+          <p class="form__erro" id="erro" role="alert"></p>
+          <button class="btn btn--gel btn--cheio" type="submit">Enviar no WhatsApp</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ================= DÚVIDAS ================= -->
+    <section class="secao" id="duvidas">
+      <div class="wrap wrap--estreito">
+        <div class="secao__topo">
+          <h2>Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Como faço para agendar?</summary>
+            <p>Preencha o formulário deste site ou chame direto no WhatsApp. A Vih confirma o horário por lá.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo devo reservar?</summary>
+            <p>Depende do serviço. Esmaltação é mais rápida e alongamento leva mais tempo. Ao agendar, você já recebe a previsão.</p>
+          </details>
+          <details>
+            <summary>Posso levar uma referência de nail art?</summary>
+            <p>Pode e é ótimo! Leve fotos ou envie pelo WhatsApp que a Vih adapta ao formato das suas unhas.</p>
+          </details>
+          <details>
+            <summary>Como funciona o pagamento?</summary>
+            <p>As formas de pagamento são combinadas pelo WhatsApp junto com o valor do serviço.</p>
+          </details>
+          <details>
+            <summary>Preciso remarcar. E agora?</summary>
+            <p>Avise pelo WhatsApp com antecedência para reorganizar o seu horário.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="secao secao--petala" id="contato">
+      <div class="wrap">
+        <div class="secao__topo">
+          <h2>Vamos conversar?</h2>
+          <p>Escolha o canal que for mais fácil para você.</p>
+        </div>
+
+        <div class="contatos">
+          <div class="contato">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-whats="Olá, Vih! Vim pelo site.">(51) 99146-0495</a>
+          </div>
+          <div class="contato">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/vih.nailsbeauty/" target="_blank" rel="noopener">@vih.nailsbeauty</a>
+          </div>
+          <div class="contato">
+            <h3>Atendimento</h3>
+            <!-- Se quiser, escreva os dias e horários aqui. Exemplo: Segunda a sábado, das 9h às 19h -->
+            <p>Somente com hora marcada</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="wrap rodape__grade">
+      <span class="marca marca--clara">Vih Nails</span>
+      <p>© <span id="ano">2026</span> Vih Nails Beauty. Todos os direitos reservados.</p>
+      <a href="https://www.instagram.com/vih.nailsbeauty/" target="_blank" rel="noopener">@vih.nailsbeauty</a>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="whats" href="https://wa.me/5551991460495" target="_blank" rel="noopener" data-whats="Olá, Vih! Vim pelo site." aria-label="Chamar a Vih no WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true">
+      <path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.19 1.6 6.02L4 29l8.13-1.56a12 12 0 0 0 3.91.65C22.68 28.09 28 22.7 28 16.05 28 9.4 22.68 3 16.04 3zm0 22.1c-1.2 0-2.38-.32-3.4-.93l-.24-.15-4.83.93.98-4.7-.16-.25a9.9 9.9 0 0 1-1.52-5.29c0-5.5 4.48-9.98 9.99-9.98 5.5 0 9.98 4.48 9.98 9.98 0 5.5-4.48 10.39-9.99 10.39zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+
+  <!-- Ampliação das fotos -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="lightbox__btn lightbox__fechar" id="lbFechar" type="button" aria-label="Fechar">&times;</button>
+    <button class="lightbox__btn lightbox__ant" id="lbAnt" type="button" aria-label="Foto anterior">&#8249;</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lightbox__btn lightbox__prox" id="lbProx" type="button" aria-label="Próxima foto">&#8250;</button>
+  </div>
+
+  <!-- Código: arquivo na mesma pasta deste index.html -->
+  <script src="script.js" defer></script>
+</body>
+</html>
