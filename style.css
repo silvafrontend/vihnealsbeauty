@@ -240,7 +240,8 @@ h3 { font-size: 1.4rem; }
 .tile--grande { grid-column: span 2; grid-row: span 2; }
 .tile--larga { grid-column: span 2; }
 .tile--vazio { cursor: default; }
-.tile img {
+.tile img,
+.tile video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -248,7 +249,8 @@ h3 { font-size: 1.4rem; }
   object-fit: cover;
   transition: transform .5s;
 }
-.tile:hover img { transform: scale(1.04); }
+.tile:hover img,
+.tile:hover video { transform: scale(1.04); }
 .tile__icone {
   --unha: #fff;
   position: absolute;
@@ -402,7 +404,7 @@ h3 { font-size: 1.4rem; }
 }
 .whats:hover { transform: scale(1.06); }
 
-/* ---------- Ampliação das fotos ---------- */
+/* ---------- Ampliação das fotos e vídeos ---------- */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -414,7 +416,13 @@ h3 { font-size: 1.4rem; }
   background: rgba(20, 6, 24, .94);
 }
 .lightbox.aberto { display: flex; }
-.lightbox img { max-width: min(92vw, 900px); max-height: 88vh; border-radius: 12px; object-fit: contain; }
+.lightbox img,
+.lightbox video {
+  max-width: min(92vw, 900px);
+  max-height: 88vh;
+  border-radius: 12px;
+  object-fit: contain;
+}
 .lightbox__btn {
   position: absolute;
   color: var(--branco);
